@@ -38,9 +38,9 @@ function UrlGen() {
           <input placeholder="Enter the value to send" onChange={(e)=>setQr2(e.target.value)}/>
         </div>
         <div>
-          <button onClick={()=>{
+          <button style={{backgroundColor:'green',color:'white'}} onClick={()=>{
             navigate('/B')
-          }}>click here to view 3D model</button>
+          }}>click here to view 3D model</button> <br></br>
           <input placeholder="Enter the value to send" onChange={(e)=>setQr3(e.target.value)}/>
         </div>
       </section>
