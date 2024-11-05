@@ -1,12 +1,14 @@
 import QRCode from "react-qr-code";
 import CryptoJS from 'crypto-js';
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function UrlGen() {
   
     const[qr2,setQr2] = useState('')
     const[qr3,setQr3] = useState('')
 
+    const navigate  = useNavigate()
     const encryptString = (string, secretKey) => {
       return CryptoJS.AES.encrypt(string, secretKey).toString();
     };
@@ -36,7 +38,9 @@ function UrlGen() {
           <input placeholder="Enter the value to send" onChange={(e)=>setQr2(e.target.value)}/>
         </div>
         <div>
-          <QRCode value={`https://qr3-eta.vercel.app/B`} /> <br></br>
+          <button onClick={()=>{
+            navigate('/B')
+          }}>click here to view 3D model</button>
           <input placeholder="Enter the value to send" onChange={(e)=>setQr3(e.target.value)}/>
         </div>
       </section>
