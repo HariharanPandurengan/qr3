@@ -1,6 +1,6 @@
 import QRCode from "react-qr-code";
 import CryptoJS from 'crypto-js';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function UrlGen() {
   
@@ -22,6 +22,10 @@ function UrlGen() {
     const encodedString2 = encodeURIComponent(encryptedString2);
 
     sessionStorage.setItem('hiddenParam',qr3)
+    useEffect(()=>{
+      sessionStorage.removeItem('hiddenParam')
+      sessionStorage.setItem('hiddenParam',qr3)
+    },[qr3])
     return (
       <section style={{display:'flex',justifyContent:'space-around',alignItems:'center',width:'100%'}}>
         <div style={{marginRight:'50px'}}>
