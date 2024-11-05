@@ -25,14 +25,14 @@ function UrlGen() {
     return (
       <section style={{display:'flex',justifyContent:'space-around',alignItems:'center',width:'100%'}}>
         <div style={{marginRight:'50px'}}>
-          <QRCode value={`https://qrcode2-opal.vercel.app/unMask/${encodedString}`} />
+          <QRCode value={`https://qr3-eta.vercel.app/unMask/${encodedString}`} />
         </div>
         <div style={{marginRight:'50px'}}> 
-          <QRCode value={`https://qrcode2-opal.vercel.app/A/${encodedString2}`} /> <br></br>
+          <QRCode value={`https://qr3-eta.vercel.app/A/${encodedString2}`} /> <br></br>
           <input placeholder="Enter the value to send" onChange={(e)=>setQr2(e.target.value)}/>
         </div>
         <div>
-          <QRCode value={`https://qrcode2-opal.vercel.app/B`} /> <br></br>
+          <QRCode value={`https://qr3-eta.vercel.app/B`} /> <br></br>
           <input placeholder="Enter the value to send" onChange={(e)=>setQr3(e.target.value)}/>
         </div>
       </section>
