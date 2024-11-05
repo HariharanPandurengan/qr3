@@ -17,9 +17,9 @@ function UrlGen() {
     const encodedString2 = encodeURIComponent(encryptedString2);
     return (
       <section style={{display:'flex',justifyContent:'space-around',alignItems:'center',width:'100%'}}>
-        <QRCode style={{marginRight:'50px'}} value={`https://qrcode-taupe-chi.vercel.app/unMask/${encodedString}`} />
-        <QRCode style={{marginRight:'50px'}} value={`https://qrcode-taupe-chi.vercel.app/A/${encodedString2}`} />
-        <QRCode value={`https://qrcode-taupe-chi.vercel.app/A/${encodedString2}`} />
+        <QRCode style={{marginRight:'50px'}} value={`https://qrcode2-opal.vercel.app/unMask/${encodedString}`} />
+        <QRCode style={{marginRight:'50px'}} value={`https://qrcode2-opal.vercel.app/A/${encodedString2}`} />
+        <QRCode value={`https://qrcode2-opal.vercel.app/A/${encodedString2}`} />
       </section>
     )
   }
