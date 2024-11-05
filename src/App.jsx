@@ -4,7 +4,6 @@ import UrlUnmask from './components/UrlUnmask'
 import A from './components/A'
 import B from './components/B'
 import { Routes,Route } from 'react-router-dom'
-import B from './components/B'
 
 function App() {
 
