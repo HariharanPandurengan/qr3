@@ -36,7 +36,7 @@ function UrlGen() {
           <QRCode value={`https://qr3-eta.vercel.app/unMask/${encodedString}`} />
         </div> */}
         <div style={{marginRight:'50px'}}> 
-          <QRCode value={`https://qr3-eta.vercel.app/A/${encodedString2}`} /> <br></br>
+          <QRCode value={`https://qr-react-test.vercel.app/${encodedString2}`} /> <br></br>
           <input placeholder="Enter the value to send" onChange={(e)=>setQr2(e.target.value)}/>
         </div>
         {/* <div>
