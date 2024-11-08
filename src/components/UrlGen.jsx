@@ -19,10 +19,10 @@ function UrlGen() {
 
     // const encryptedString = encryptString(originalString, secretKey);
     const encryptedString2 = encryptString(qr2, secretKey);
-
+    const encodedString2 = encodeURIComponent(encryptedString2);
   
     // const encodedString = encodeURIComponent(encryptedString);
-    const encodedString2 = encodeURIComponent(encryptedString2);
+    
 
     // sessionStorage.setItem('hiddenParam',qr3)
     // useEffect(()=>{
@@ -36,7 +36,7 @@ function UrlGen() {
           <QRCode value={`https://qr3-eta.vercel.app/unMask/${encodedString}`} />
         </div> */}
         <div style={{marginRight:'50px'}}> 
-          <QRCode value={`https://qr-react-test.vercel.app/${encodedString2}`} /> <br></br>
+          <QRCode value={`https://qr-react-test.vercel.app/${qr2 !== '' ? encodedString2 : ''}`} /> <br></br>
           <input placeholder="Enter the value to send" onChange={(e)=>setQr2(e.target.value)}/>
         </div>
         {/* <div>
